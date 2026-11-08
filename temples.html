@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Explore a gallery of nine temples from around the world."
+    >
+    <meta name="author" content="Moroni Kalala Batukeyila">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles/temples.css">
+    <link
+      rel="stylesheet"
+      href="styles/temples-large.css"
+      media="screen and (min-width: 48rem)"
+    >
+    <script src="scripts/temples.js" defer></script>
+    <title>Temple Album | Moroni Kalala Batukeyila</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <p class="site-title">Temple Album</p>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span aria-hidden="true">☰</span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#gallery" data-filter="all" aria-current="page">Home</a></li>
+            <li><a href="#gallery" data-filter="old">Old</a></li>
+            <li><a href="#gallery" data-filter="new">New</a></li>
+            <li><a href="#gallery" data-filter="large">Large</a></li>
+            <li><a href="#gallery" data-filter="small">Small</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>Temples</h1>
+      <section class="temple-gallery" id="gallery" aria-label="Temple gallery">
+        <figure data-year="1893" data-size="large">
+          <img src="images/temple-album/salt-lake.jpg" alt="Salt Lake Temple in Salt Lake City, Utah" loading="lazy" decoding="async">
+          <figcaption>Salt Lake Temple — Salt Lake City, Utah</figcaption>
+        </figure>
+        <figure data-year="2002" data-size="large">
+          <img src="images/temple-album/nauvoo.jpg" alt="Nauvoo Illinois Temple at night" loading="lazy" decoding="async">
+          <figcaption>Nauvoo Illinois Temple — Nauvoo, Illinois</figcaption>
+        </figure>
+        <figure data-year="2019" data-size="small">
+          <img src="images/temple-album/kinshasa.jpg" alt="Kinshasa Democratic Republic of the Congo Temple" loading="lazy" decoding="async">
+          <figcaption>Kinshasa Democratic Republic of the Congo Temple</figcaption>
+        </figure>
+        <figure data-year="2017" data-size="small">
+          <img src="images/temple-album/paris.jpg" alt="Paris France Temple" loading="lazy" decoding="async">
+          <figcaption>Paris France Temple — Le Chesnay, France</figcaption>
+        </figure>
+        <figure data-year="2004" data-size="small">
+          <img src="images/temple-album/accra.jpg" alt="Accra Ghana Temple" loading="lazy" decoding="async">
+          <figcaption>Accra Ghana Temple — Accra, Ghana</figcaption>
+        </figure>
+        <figure data-year="2019" data-size="small">
+          <img src="images/temple-album/rome.jpg" alt="Rome Italy Temple" loading="lazy" decoding="async">
+          <figcaption>Rome Italy Temple — Rome, Italy</figcaption>
+        </figure>
+        <figure data-year="1974" data-size="large">
+          <img src="images/temple-album/washington-dc.jpg" alt="Washington D.C. Temple in Kensington, Maryland" loading="lazy" decoding="async">
+          <figcaption>Washington D.C. Temple — Kensington, Maryland</figcaption>
+        </figure>
+        <figure data-year="1985" data-size="small">
+          <img src="images/temple-album/johannesburg.jpg" alt="Johannesburg South Africa Temple" loading="lazy" decoding="async">
+          <figcaption>Johannesburg South Africa Temple — Johannesburg</figcaption>
+        </figure>
+        <figure data-year="1980" data-size="large">
+          <img src="images/temple-album/tokyo.jpg" alt="Tokyo Japan Temple" loading="lazy" decoding="async">
+          <figcaption>Tokyo Japan Temple — Tokyo, Japan</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="currentyear"></span> Moroni Kalala Batukeyila,
+        Kinshasa, DRC
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Keep a list of your favorite Book of Mormon chapters."
+    >
+    <meta name="author" content="Moroni Kalala Batukeyila">
+    <title>Book of Mormon - Top 10</title>
+    <link rel="stylesheet" href="styles/bom.css">
+    <script src="scripts/dom.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1><span aria-hidden="true">📖</span> Book of Mormon - Top 10</h1>
+    </header>
+    <main>
+      <label for="favchap">Enter Book and Chapter:</label>
+      <input
+        type="text"
+        id="favchap"
+        name="favchap"
+        placeholder="Alma 5"
+        autocomplete="off"
+        aria-describedby="chapter-help feedback"
+      >
+      <p id="chapter-help">Enter a Book of Mormon book and chapter, such as Alma 5.</p>
+      <button type="button" id="add-chapter">Add Chapter</button>
+      <p id="feedback" role="status" aria-live="polite" aria-atomic="true"></p>
+      <ul
+        id="list"
+        aria-label="Favorite Book of Mormon chapters"
+        aria-live="polite"
+        aria-relevant="additions removals"
+      >
+        <li>
+          Alma 5
+          <button type="button" class="delete-button" aria-label="Remove Alma 5">❌</button>
+        </li>
+        <li>
+          Alma 32
+          <button type="button" class="delete-button" aria-label="Remove Alma 32">❌</button>
+        </li>
+        <li>
+          Helaman 12
+          <button type="button" class="delete-button" aria-label="Remove Helaman 12">❌</button>
+        </li>
+        <li>
+          Moroni 7
+          <button type="button" class="delete-button" aria-label="Remove Moroni 7">❌</button>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
