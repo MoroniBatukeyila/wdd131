@@ -1,38 +1,67 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Country information and weather for the Democratic Republic of the Congo." />
+    <meta
+      name="description"
+      content="Country information and weather for the Democratic Republic of the Congo."
+    />
     <title>Democratic Republic of the Congo | Country Page</title>
     <link rel="stylesheet" href="styles/country.css" />
     <script src="scripts/country.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header><h1>Democratic Republic of the Congo</h1></header>
     <main class="main">
-      <div class="hero" role="img" aria-label="An okapi, an animal native to the Democratic Republic of the Congo"></div>
+      <div
+        class="hero"
+        role="img"
+        aria-label="An okapi, an animal native to the Democratic Republic of the Congo"
+      ></div>
       <section class="data">
         <h2>Data</h2>
         <ul>
-          <li><strong>Area:</strong> 2,345,410 sq km</li><li><strong>Population:</strong> 150,000,000</li>
-          <li><strong>Capital:</strong> Kinshasa</li><li><strong>Languages:</strong> French, Lingala, Kikongo, Swahili, Tshiluba</li>
-          <li><strong>Currency:</strong> Congolese franc (CDF)</li><li><strong>Time zone:</strong> UTC+1, UTC+2</li>
-          <li><strong>Calling code:</strong> +243</li><li><strong>Internet TLD:</strong> .cd</li>
+          <li><strong>Area:</strong> 2,345,410 sq km</li>
+          <li><strong>Population:</strong> 150,000,000</li>
+          <li><strong>Capital:</strong> Kinshasa</li>
+          <li>
+            <strong>Languages:</strong> French, Lingala, Kikongo, Swahili,
+            Tshiluba
+          </li>
+          <li><strong>Currency:</strong> Congolese franc (CDF)</li>
+          <li><strong>Time zone:</strong> UTC+1, UTC+2</li>
+          <li><strong>Calling code:</strong> +243</li>
+          <li><strong>Internet TLD:</strong> .cd</li>
         </ul>
       </section>
       <section class="weather">
         <h2>Weather</h2>
-        <img class="weather-icon" src="images/weather-partly-cloudy.svg" alt="Partly cloudy" width="72" height="72" />
+        <img
+          class="weather-icon"
+          src="images/weather-partly-cloudy.svg"
+          alt="Partly cloudy"
+          width="72"
+          height="72"
+        />
         <ul>
-          <li><strong>Temperature:</strong> <span id="temperature"></span></li><li><strong>Conditions:</strong> Partly Cloudy</li>
-          <li><strong>Wind:</strong> <span id="wind-speed"></span></li><li><strong>Wind Chill:</strong> <span id="wind-chill"></span></li>
+          <li><strong>Temperature:</strong> <span id="temperature"></span></li>
+          <li><strong>Conditions:</strong> Partly Cloudy</li>
+          <li><strong>Wind:</strong> <span id="wind-speed"></span></li>
+          <li><strong>Wind Chill:</strong> <span id="wind-chill"></span></li>
         </ul>
       </section>
     </main>
-    <footer><p>&copy;<span id="currentyear"></span> Moroni Kalala Batukeyila, Kinshasa, DRC</p><p id="lastModified"></p></footer>
+    <footer>
+      <p>
+        &copy;<span id="currentyear"></span> Moroni Kalala Batukeyila, Kinshasa,
+        DRC
+      </p>
+      <p id="lastModified"></p>
+    </footer>
   </body>
 </html>
