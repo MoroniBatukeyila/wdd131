@@ -5,7 +5,9 @@ header { background: var(--blue); border-bottom: 8px solid var(--yellow); color:
 h1, h2 { font-family: Montserrat, sans-serif; }
 h1 { margin: 0; font-size: clamp(1.4rem, 3vw, 2rem); }
 .main { position: relative; background: var(--blue); }
-.hero { height: 600px; background: url("../images/Okapi.jpeg") center / cover no-repeat; }
+.hero, .hero img { display: block; width: 100%; }
+.hero { height: 600px; }
+.hero img { height: 100%; object-fit: cover; }
 .data, .weather { background: rgb(255 255 255 / 92%); position: absolute; width: min(310px, calc(100% - 2rem)); }
 .data { left: 2rem; top: 2rem; }
 .weather { bottom: 2rem; right: 2rem; }

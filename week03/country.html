@@ -5,6 +5,8 @@
       name="description"
       content="Country information and weather for the Democratic Republic of the Congo."
     />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Democratic Republic of the Congo | Country Page</title>
     <link rel="stylesheet" href="styles/country.css" />
     <script src="scripts/country.js" defer></script>
@@ -18,11 +20,15 @@
   <body>
     <header><h1>Democratic Republic of the Congo</h1></header>
     <main class="main">
-      <div
-        class="hero"
-        role="img"
-        aria-label="An okapi, an animal native to the Democratic Republic of the Congo"
-      ></div>
+      <picture class="hero">
+        <source media="(max-width: 700px)" srcset="images/okapi-small.webp" />
+        <img
+          src="images/okapi-large.webp"
+          alt="An okapi, an animal native to the Democratic Republic of the Congo"
+          width="1280"
+          height="720"
+        />
+      </picture>
       <section class="data">
         <h2>Data</h2>
         <ul>
