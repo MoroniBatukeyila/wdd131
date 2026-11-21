@@ -1,0 +1,35 @@
+@media screen and (min-width: 48rem) {
+  .header-content {
+    flex-wrap: nowrap;
+    gap: 2rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .primary-nav,
+  .primary-nav.is-open {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    margin-left: auto;
+  }
+
+  .primary-nav ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  main {
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .temple-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
