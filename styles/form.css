@@ -24,14 +24,20 @@ body {
   line-height: 1.5;
 }
 
+header {
+  width: min(100% - 2rem, 34rem);
+  margin: auto auto 0;
+  padding-top: 1.5rem;
+}
+
 main {
   width: min(100% - 2rem, 34rem);
-  margin: auto;
-  padding: 1.5rem 0;
+  margin: 0 auto auto;
+  padding: 0 0 1.5rem;
 }
 
 h1 {
-  margin: 0 0 0.75rem;
+  margin: 0;
   border-radius: 0.35rem 0.35rem 0 0;
   background: var(--plum);
   color: #fff;
@@ -185,7 +191,7 @@ footer p {
   font-size: 0.9rem;
 }
 
-.confirmation h1 {
+.confirmation-header h1 {
   border-radius: 0.35rem;
 }
 
@@ -227,8 +233,12 @@ footer p {
 }
 
 @media (min-width: 40rem) {
+  header {
+    padding-top: 2rem;
+  }
+
   main {
-    padding: 2rem 0;
+    padding-bottom: 2rem;
   }
 
   form,
