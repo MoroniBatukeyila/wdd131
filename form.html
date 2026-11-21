@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Share your product experience with a quick product review."
+    />
+    <meta name="author" content="Moroni Kalala Batukeyila" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/product-review.js" defer></script>
+    <title>Product Review | WDD 131</title>
+  </head>
+  <body>
+    <main>
+      <h1>Product Review</h1>
+      <form action="review.html" method="get">
+        <div class="form-field">
+          <label for="product">Product Name <span class="required">(required)</span></label>
+          <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product ...</option>
+          </select>
+        </div>
+
+        <fieldset class="rating-field">
+          <legend>Overall Rating <span class="required">(required)</span></legend>
+          <div class="rating-options">
+            <label for="rating-1">
+              <span class="rating-stars" aria-hidden="true">&star;</span>
+              <input id="rating-1" name="rating" type="radio" value="1" required />
+              <span class="sr-only">1 star</span>
+            </label>
+            <label for="rating-2">
+              <span class="rating-stars" aria-hidden="true">&star;&star;</span>
+              <input id="rating-2" name="rating" type="radio" value="2" required />
+              <span class="sr-only">2 stars</span>
+            </label>
+            <label for="rating-3">
+              <span class="rating-stars" aria-hidden="true">&star;&star;&star;</span>
+              <input id="rating-3" name="rating" type="radio" value="3" required />
+              <span class="sr-only">3 stars</span>
+            </label>
+            <label for="rating-4">
+              <span class="rating-stars" aria-hidden="true">&star;&star;&star;&star;</span>
+              <input id="rating-4" name="rating" type="radio" value="4" required />
+              <span class="sr-only">4 stars</span>
+            </label>
+            <label for="rating-5">
+              <span class="rating-stars" aria-hidden="true">&star;&star;&star;&star;&star;</span>
+              <input id="rating-5" name="rating" type="radio" value="5" required />
+              <span class="sr-only">5 stars</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-field">
+          <label for="installation-date">Date of Installation <span class="required">(required)</span></label>
+          <input
+            id="installation-date"
+            name="installation-date"
+            type="date"
+            required
+          />
+        </div>
+
+        <fieldset class="feature-field">
+          <legend>
+            Which features did you find useful in the product?
+            <span class="hint">(Check all that apply)</span>
+          </legend>
+          <div class="checkbox-options">
+            <label for="durability">
+              <input id="durability" name="features" type="checkbox" value="Durability" />
+              Durability
+            </label>
+            <label for="ease-of-use">
+              <input id="ease-of-use" name="features" type="checkbox" value="Ease of Use" />
+              Ease of Use
+            </label>
+            <label for="performance">
+              <input id="performance" name="features" type="checkbox" value="Performance" />
+              Performance
+            </label>
+            <label for="design">
+              <input id="design" name="features" type="checkbox" value="Design" />
+              Design
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-field">
+          <label for="written-review">Written Review <span class="optional">(Optional)</span></label>
+          <textarea id="written-review" name="written-review" rows="5"></textarea>
+        </div>
+
+        <div class="form-field">
+          <label for="user-name">Your Name <span class="optional">(Optional)</span></label>
+          <input id="user-name" name="user-name" type="text" autocomplete="name" />
+        </div>
+
+        <input class="submit-button" type="submit" value="Post Review" />
+      </form>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentyear"></span> Moroni Kalala Batukeyila, Kinshasa, DRC</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
